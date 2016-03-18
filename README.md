@@ -3,6 +3,8 @@ apache-master-ssh
 
 Simple ubuntu apache docker images with SSH access
 
+![enter image description here](https://circleci.com/gh/20uf/apache-master-ssh.svg?style=shield&circle-token=:circle-token)
+![Status](https://circleci.com/gh/20uf/apache-master-ssh.png?circle-token=66be005260b763277c38022c1ae994488287e8a0)
 
 Usage
 -----

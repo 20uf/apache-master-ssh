@@ -3,8 +3,9 @@ machine:
     - docker
 dependencies:
   override:
-    - docker build -t sut .
+    - docker build -t 20uf/master-apache-ssh .
 test:
   override:
-    - docker run -d -p 2202:22 sut; sleep 10
+    - docker run -d -p 8080:80 2202:22 20uf/master-apache-ssh; sleep 10
+    - nc -z 127.0.0.1 8080
     - nc -z 127.0.0.1 2202
